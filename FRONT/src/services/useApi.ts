@@ -32,7 +32,6 @@ const useApi = (token?: string) => {
   const login = useCallback(async (): Promise<string> => {
     const username = import.meta.env.VITE_USER;
     const password = import.meta.env.VITE_PASSWORD;
-    console.info(JSON.stringify({ login: username, senha: password }));
     const response = await fetchWithAuth('/login', {
       method: 'POST',
       body: JSON.stringify({ login: username, senha: password }),
