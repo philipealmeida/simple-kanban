@@ -3,6 +3,7 @@ import { useMainStore } from '../../../store/mainStore';
 import { CardList, ICard } from '../../../models/card';
 import { ArrowLeftIcon } from '../icon/ArrowLeftIcon';
 import useApi from '../../../services/useApi';
+import ReactMarkdown from 'react-markdown';
 import { Button } from '../button/Button';
 import './card.css';
 
@@ -76,14 +77,18 @@ export const Card = ({ id, title, content, lista, fetchCards }: CardProps) => {
       >
         {title}
       </h3>
-      <div
-        className={`card-content ${isEditable && 'card-content--editable'}`}
-        contentEditable={isEditable}
-        ref={editContentRef}
-        suppressContentEditableWarning={true}
-      >
-        {content}
-      </div>
+      {isEditable ? (
+        <div
+          className={`card-content ${isEditable && 'card-content--editable'}`}
+          contentEditable={isEditable}
+          ref={editContentRef}
+          suppressContentEditableWarning={true}
+        >
+          {content}
+        </div>
+      ) : (
+        <ReactMarkdown>{content}</ReactMarkdown>
+      )}
       <div className="card-actions">
         {isEditable ? (
           <>
