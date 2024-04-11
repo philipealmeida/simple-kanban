@@ -72,6 +72,16 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
+# dotenv environment variable 
+
+# Note: The .env files are commented out in this .gitignore file because this is not a production project.
+# In a production project, it is crucial to ignore .env files to prevent exposing sensitive information such as API keys, database credentials, etc.
+# .env
+# .env.development.local
+# .env.test.local
+# .env.production.local
+# .env.local
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
