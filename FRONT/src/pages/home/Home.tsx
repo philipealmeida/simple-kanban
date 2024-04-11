@@ -5,7 +5,7 @@ import useApi from '../../services/useApi';
 import { useEffect } from 'react';
 import './home.css';
 
-function Home() {
+const Home = () => {
   const { token, setToken } = useMainStore(state => state);
   const { login } = useApi();
 
@@ -26,6 +26,6 @@ function Home() {
       <CardsWrapper />
     </main>
   );
-}
+};
 
 export default Home;

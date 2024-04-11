@@ -1,7 +1,7 @@
 import { useEditableCard } from './hook/useEditableCard';
 import { useMainStore } from '../../../store/mainStore';
 import { CardList, ICard } from '../../../models/card';
-import ArrowLeftIcon from '../icon/ArrowLeftIcon';
+import { ArrowLeftIcon } from '../icon/ArrowLeftIcon';
 import useApi from '../../../services/useApi';
 import { Button } from '../button/Button';
 import './card.css';

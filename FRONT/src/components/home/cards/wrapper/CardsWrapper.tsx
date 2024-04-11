@@ -8,7 +8,7 @@ import { Card } from '../../../ui/card/Card';
 import { Grid } from '../../../ui/grid/Grid';
 import { useState, useEffect } from 'react';
 
-function CardsWrapper() {
+const CardsWrapper = () => {
   const [cards, setCards] = useState<ICard[]>([mockCards[0]]);
   const { token } = useMainStore(state => state);
   const { getCards } = useApi(token);
@@ -110,6 +110,6 @@ function CardsWrapper() {
       </Grid>
     </div>
   );
-}
+};
 
 export default CardsWrapper;

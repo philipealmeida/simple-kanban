@@ -1,11 +1,11 @@
 import { IconJSXProps } from '../../../models/icon';
 import { ICONS } from '../../../constants/icon';
 
-export default function ArrowLeftIcon({
+export const ArrowLeftIcon = ({
   width = ICONS.arrowsWidth,
   height = ICONS.arrowsHeight,
   fill = 'currentColor',
-}: IconJSXProps) {
+}: IconJSXProps) => {
   return (
     <svg
       width={width}
@@ -20,4 +20,4 @@ export default function ArrowLeftIcon({
       />
     </svg>
   );
-}
+};
