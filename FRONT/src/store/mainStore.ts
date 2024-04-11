@@ -1,6 +1,6 @@
-import { create } from 'zustand';
-import { MainStore } from '../models/main';
 import { createJSONStorage, persist } from 'zustand/middleware';
+import { MainStore } from '@/models/main';
+import { create } from 'zustand';
 
 const initialState: MainStore = {
   token: '',

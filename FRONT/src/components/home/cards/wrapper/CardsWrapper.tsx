@@ -1,12 +1,12 @@
-import { Typography } from '../../../ui/typography/Typography';
-import { useMainStore } from '../../../../store/mainStore';
-import { CardList, ICard } from '../../../../models/card';
-import { mockCards } from '../../../../__mocks__/cards';
-import { Button } from '../../../ui/button/Button';
-import useApi from '../../../../services/useApi';
-import { Card } from '../../../ui/card/Card';
-import { Grid } from '../../../ui/grid/Grid';
+import { Typography } from '@/components/ui/typography/Typography';
+import { Button } from '@/components/ui/button/Button';
+import { Card } from '@/components/ui/card/Card';
+import { Grid } from '@/components/ui/grid/Grid';
+import { useMainStore } from '@/store/mainStore';
+import { ICard, CardList } from '@/models/card';
+import { mockCards } from '@/__mocks__/cards';
 import { useState, useEffect } from 'react';
+import useApi from '@/services/useApi';
 
 const CardsWrapper = () => {
   const [cards, setCards] = useState<ICard[]>([mockCards[0]]);

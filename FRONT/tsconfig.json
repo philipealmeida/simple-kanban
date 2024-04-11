@@ -18,9 +18,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths */
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src", "./jest.setup.ts"],
   "exclude": ["node_modules", "**/*.test.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

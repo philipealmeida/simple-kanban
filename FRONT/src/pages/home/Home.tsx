@@ -1,7 +1,7 @@
-import CardsWrapper from '../../components/home/cards/wrapper/CardsWrapper';
-import HomeHeader from '../../components/home/header/HomeHeader';
-import { useMainStore } from '../../store/mainStore';
-import useApi from '../../services/useApi';
+import CardsWrapper from '@/components/home/cards/wrapper/CardsWrapper';
+import HomeHeader from '@/components/home/header/HomeHeader';
+import { useMainStore } from '@/store/mainStore';
+import useApi from '@/services/useApi';
 import { useEffect } from 'react';
 import './home.css';
 

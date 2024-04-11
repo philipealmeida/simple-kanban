@@ -1,6 +1,6 @@
+import { useMainStore } from '@/store/mainStore';
+import { ICard } from '@/models/card';
 import { useCallback } from 'react';
-import { ICard } from '../models/card';
-import { useMainStore } from '../store/mainStore';
 
 const useApi = (token?: string) => {
   const baseURL = import.meta.env.VITE_API_BASE_URL;

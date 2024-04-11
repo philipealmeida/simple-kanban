@@ -13,7 +13,6 @@
 }
 
 .grid--item {
-  /* border-right: 0.2px solid silver; */
   flex-flow: column;
   padding-right: 1rem;
   padding-left: 1rem;
