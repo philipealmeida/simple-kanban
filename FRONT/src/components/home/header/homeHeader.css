@@ -1,0 +1,11 @@
+.home-header {
+  display: flex;
+  padding: 1.5rem 2rem 2.6rem;
+  justify-content: space-between;
+}
+
+.home-header__title {
+  font-size: 2.0rem;
+  font-weight: 500;
+  margin: 0;
+}

@@ -1,0 +1,44 @@
+main {
+  max-width: 100svw;
+  overflow-x: hidden;
+}
+
+.grid__item-title {
+  margin: 0 0 2rem;
+}
+
+.grid--container {
+  .grid--item {
+    .typography {
+      font-size: 0.9rem;
+      color: #fff;
+      border-radius: 0.9rem;
+      padding: 0.48rem 0.8rem;
+      background-color: var(--gray-dark);
+    }
+
+    &:nth-of-type(1) {
+      .typography {
+        background-color: #136cd3;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .typography {
+        background-color: #ee9d02;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .typography {
+        background-color: #178d1b;
+      }
+    }
+  }
+
+  .grid__content {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+  }
+}

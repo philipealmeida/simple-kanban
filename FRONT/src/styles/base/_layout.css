@@ -1,0 +1,10 @@
+html {
+  background-color: var(--gray-light);
+}
+
+#root {
+  width: 100svw;
+  margin: 0 auto;
+  min-height: 100svh;
+  max-width: 1280px;
+}

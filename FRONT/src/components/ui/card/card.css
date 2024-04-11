@@ -1,0 +1,53 @@
+.card-container {
+  border: 1px solid var(--gray);
+  background-color: #fff;
+  border-radius: 1.5rem;
+  flex-flow: column;
+  padding: 1.3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.card-title {
+  letter-spacing: -0.02rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.card-content {
+  font-weight: 300;
+  line-height: 1.3;
+  font-size: 0.9rem;
+}
+
+.card-title--editable,
+.card-content--editable {
+  border: 1px solid var(--primary-blue);
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+}
+
+.card-actions {
+  transition: all 350ms ease;
+  display: flex;
+  opacity: 0.5;
+  gap: 0.6rem;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .move-card-wrapper {
+    margin-left: auto;
+
+    .custom-button:nth-last-of-type(1) {
+      margin-left: 1rem;
+    }
+  }
+
+  .arrow-right-icon {
+    svg {
+      rotate: 180deg;
+    }
+  }
+}
